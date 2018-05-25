@@ -1,6 +1,23 @@
-h1{
-font-family: 'Calibri', sans-serif;
-margin: 50px;
-color: green;
-text-align: center;
+.container {
+  display: grid;    
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: 50px 350px 50px;
+}
+
+header {
+  grid-column: span 12;
+  display: flex;
+}
+
+/* moving logout button to right */
+header > div:nth-child(3) {
+    margin-left: auto;
+}
+
+aside {
+  grid-column: span 2;
+}
+
+main {
+  grid-column: span 10;
 }
